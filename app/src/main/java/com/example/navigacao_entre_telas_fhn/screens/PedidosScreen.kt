@@ -16,12 +16,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import androidx.navigation.NavHostController
 
 @Composable
-fun LoginScreen(modifier: Modifier = Modifier, navController: NavController) {
-
-
+fun PedidosScreen(modifier: Modifier = Modifier, navController: NavController) {
     Box(
         modifier = modifier
             .fillMaxSize()
@@ -30,23 +27,25 @@ fun LoginScreen(modifier: Modifier = Modifier, navController: NavController) {
         contentAlignment = Alignment.Center
     ) {
         Column(
-            horizontalAlignment = Alignment.CenterHorizontally
+            horizontalAlignment = Alignment.CenterHorizontally,
+            modifier = Modifier.fillMaxSize()
         ) {
             Text(
-                text = "TELA LOGIN",
+                text = "TELA PEDIDOS",
                 fontSize = 40.sp,
                 fontWeight = FontWeight.Bold,
-                color = Color.Green
+                color = Color.Blue
             )
             Button(
                 onClick = { navController.navigate("menu") },
                 colors = ButtonDefaults.buttonColors(Color.DarkGray),
                 modifier = Modifier.align(alignment = Alignment.CenterHorizontally)
 
-            ) { Text(text = "ENTRAR NO APP", fontSize = 20.sp, color = Color.Yellow) }
+            ) { Text(text = "VOLTAR PARA O MENU", fontSize = 20.sp, color = Color.Yellow) }
 
 
         }
     }
+
 
 }
