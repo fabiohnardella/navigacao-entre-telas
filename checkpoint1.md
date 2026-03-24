@@ -35,4 +35,4 @@ Cada evolução será explicada usando como base de "tópicos" os commits do git
 
 
 
-Com isso agora ao acessar a página peril será mostrado o seguinte texto: "Perfil de Fabio Nardella que tem 20 anos". Já ao entrar na página de pedido voltará o texto: "Pedidos de Cliente XPTO"
+Com isso agora ao acessar a página peril será mostrado o seguinte texto: "Perfil de - Fabio Nardella que tem 20 anos". Já ao entrar na página de pedido voltará o texto: "Pedidos de Cliente XPTO"
