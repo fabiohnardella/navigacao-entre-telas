@@ -28,40 +28,60 @@ fun MenuScreen(modifier: Modifier = Modifier, navController: NavController) {
             .fillMaxSize()
             .background(Color.Black)
             .padding(40.dp),
-            contentAlignment = Alignment.TopCenter
+        contentAlignment = Alignment.TopCenter
 
     ) {
-        Text(text = "TELA MENU", fontWeight = FontWeight.Bold, fontSize = 30.sp, color = Color.Yellow)
+        Text(
+            text = "TELA MENU",
+            fontWeight = FontWeight.Bold,
+            fontSize = 30.sp,
+            color = Color.Yellow
+        )
         Column(
             modifier = Modifier
                 .align(Alignment.Center),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Button(
-                onClick = {navController.navigate("perfil") },
+                onClick = { navController.navigate("perfil/Fabio Nardella/20") },
                 modifier = Modifier.size(width = 250.dp, height = 50.dp),
                 colors = ButtonDefaults.buttonColors(Color.DarkGray)
             ) {
-                Text(text = "IR PARA PERFIL", fontSize = 20.sp, fontWeight = FontWeight.Bold, color = Color.Red);
+                Text(
+                    text = "IR PARA PERFIL",
+                    fontSize = 20.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = Color.Red
+                );
             }
             Spacer(modifier = Modifier.height(10.dp))
 
             Button(
-                onClick = {navController.navigate("pedidos") },
+                onClick = { navController.navigate("pedidos") },
                 modifier = Modifier.size(width = 250.dp, height = 50.dp),
                 colors = ButtonDefaults.buttonColors(Color.DarkGray)
             ) {
-                Text(text = "IR PARA PEDIDOS", fontSize = 20.sp, fontWeight = FontWeight.Bold, color = Color.Blue);
+                Text(
+                    text = "IR PARA PEDIDOS",
+                    fontSize = 20.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = Color.Blue
+                );
             }
 
             Spacer(modifier = Modifier.height(10.dp))
 
             Button(
-                onClick = {navController.navigate("login") },
+                onClick = { navController.navigate("login") },
                 modifier = Modifier.size(width = 250.dp, height = 50.dp),
                 colors = ButtonDefaults.buttonColors(Color.DarkGray)
             ) {
-                Text(text = "SAIR PARA LOGIN", fontSize = 20.sp, fontWeight = FontWeight.Bold, color = Color.Green);
+                Text(
+                    text = "SAIR PARA LOGIN",
+                    fontSize = 20.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = Color.Green
+                );
             }
 
         }

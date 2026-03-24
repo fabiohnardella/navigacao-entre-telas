@@ -12,13 +12,17 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextIndent
+import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 
 @Composable
-fun PedidosScreen(modifier: Modifier = Modifier, navController: NavController) {
+fun PedidosScreen(modifier: Modifier = Modifier, navController: NavController, cliente: String) {
     Box(
         modifier = modifier
             .fillMaxSize()
@@ -29,12 +33,15 @@ fun PedidosScreen(modifier: Modifier = Modifier, navController: NavController) {
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier.fillMaxSize()
+
         ) {
             Text(
-                text = "TELA PEDIDOS",
-                fontSize = 40.sp,
+                text = "Pedidos de ${cliente}",
+                fontSize = 30.sp,
                 fontWeight = FontWeight.Bold,
-                color = Color.Blue
+                color = Color.Blue,
+                style = TextStyle(textAlign = TextAlign.Center)
+
             )
             Button(
                 onClick = { navController.navigate("menu") },
